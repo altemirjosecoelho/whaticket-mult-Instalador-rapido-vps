@@ -92,3 +92,5 @@ utilize o cloudflare apontando o ip para os subdomio que aparece ao final do com
 para verificar a lista de processos do PM2 precisa logar como usuario deploy, para isso utilize o comando 
 
 > su deploy
+> 
+> pm2 list
