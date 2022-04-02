@@ -1,20 +1,20 @@
-#Criei um instalador rápido que utilizo para subir minhas múltiplas instancias de whaticket e gostaria de compartilhar com a comunidade, facilita muito o processo de subir uma instancia nova#
+***Criei um instalador rápido que utilizo para subir minhas múltiplas instancias de whaticket e gostaria de compartilhar com a comunidade, facilita muito o processo de subir uma instancia nova***
 - Cria o banco de dados de forma automática
 - Configura o nginx de forma automática
 - Configura o serviço PM2 de forma automática
 - Você pode utilizar com o repositório de sua preferência procure e altere esta linha no arquivo preparaVpsNova.sh sudo -H -u deploy bash -c "git clone https://github.com/canove/whaticket whaticket"
 só precisa informar este parâmetros:
 
-domain='meudominio.com' ## Adicione o seu domínio
+_domain='meudominio.com'_ ## Adicione o seu domínio
 
-subDomain='meusubdominio' ## Adicione o seu sub domínio 
+_subDomain='meusubdominio'_ ## Adicione o seu sub domínio 
 
-numberSequencial3Digites='001'  ## Adicione um número Sequencial com 3 dígitos não pode repetir de 000 a 999
+_numberSequencial3Digites='001'_  ## Adicione um número Sequencial com 3 dígitos não pode repetir de 000 a 999
 
-mysqlTablePassword="minhasenhamysql!" ## Adicione a senha que deseja utilizar para tabela do mysql
+_mysqlTablePassword="minhasenhamysql!"_ ## Adicione a senha que deseja utilizar para tabela do mysql_
 
-##Realizado testes na VPS digital Ocean com 2gb de memoria maquinas com menos de 2gb de memoria não roda o build do frontend
-###digite no prompt de comando da sua VPS
+**Realizado testes na VPS digital Ocean com 2gb de memoria _maquinas com menos de 2gb de memoria não roda o build do frontend_**
+        digite no prompt de comando da sua VPS:
 
 > git clone https://github.com/altemirjosecoelho/whaticket-mult-Intalador-rapido-vps.git instalador
 
