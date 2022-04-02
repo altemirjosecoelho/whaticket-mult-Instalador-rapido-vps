@@ -2,7 +2,9 @@
 - Cria o banco de dados de forma automática
 - Configura o nginx de forma automática
 - Configura o serviço PM2 de forma automática
-- Você pode utilizar com o repositório de sua preferência procure e altere esta linha no arquivo preparaVpsNova.sh sudo -H -u deploy bash -c "git clone https://github.com/canove/whaticket whaticket"
+- Você pode utilizar com o repositório de sua preferência procure e altere esta linha no arquivo preparaVpsNova.sh 
+>sudo -H -u deploy bash -c "git clone https://github.com/canove/whaticket whaticket"
+
 só precisa informar este parâmetros:
 
 _domain='meudominio.com'_ ## Adicione o seu domínio
@@ -86,3 +88,7 @@ Is the information correct? [Y/n] >>>>> digite Y nesta opção
 
 
 utilize o cloudflare apontando o ip para os subdomio que aparece ao final do comando
+
+para verificar a lista de processos do PM2 precisa logar como usuario deploy, para isso utilize o comando 
+
+> su deploy
