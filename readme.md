@@ -17,33 +17,52 @@ _mysqlTablePassword="minhasenhamysql!"_ ## Adicione a senha que deseja utilizar 
         digite no prompt de comando da sua VPS:
 
 > git clone https://github.com/altemirjosecoelho/whaticket-mult-Intalador-rapido-vps.git instalador
-
+> 
 > cd instalador
+> 
 > sudo chmod +x preparaVpsNova.sh
+> 
 > sudo chmod +x  adicionarInstancia_peloNome-v3.sh
+> 
+> sudo nano preparaVpsNova.sh  ##Altere a variavel de acordo com a senha da sua preferencia 
+        
+        mysqlRootPassword use letras maiusculas minusculas e numeros evite usar / e @
 
-> sudo nano preparaVpsNova.sh  ##Altere a variavel de acordo com a senha da sua preferencia mysqlRootPassword use letras maiusculas minusculas e numeros evite usar / e @
 Crtl+x para sair do editor de texto y para salvar
->sudo ./preparaVpsNova.sh 
-##digite uma senha para o usuario deploy que vamos criar durante a instalação
-##repita a senha
-##precione enter para todas as opções
+
+>sudo ./preparaVpsNova.sh
+ 
+        digite uma senha para o usuario deploy que vamos criar durante a instalação
+        
+        repita a senha
+        
+        precione enter para todas as opções
+        
         Full Name []:
+        
         Room Number []:
+        
         Work Phone []:
+        
         Home Phone []:
+        
         Other []:
+
 Is the information correct? [Y/n] >>>>> digite Y nesta opção
 
 >cd /home/deploy/setup
 
 >sudo nano adicionarInstancia.sh      ##altere as variaveis de sua preferencia dominio subdominio etc
 
-domain='meudominio.com' ## Adicione o seu dominio
-subDomain='meusubdominio' ## Adicione o seu sub dominio não pode repetir 
-numberSequencial3Digites='001'  ## Adcione um numero Sequencial com 3 digitos não pode repetir de 000 a 999
-mysqlTablePassword="minhasenhadatabelamysql" ## Adicone a senha que deseja utilizar para tabela do mysql
-mysqlRootPassword="minhasenhaderootmysql"	## Adicone a senha de root para o mysql 
+        domain='meudominio.com' ## Adicione o seu dominio
+        
+        subDomain='meusubdominio' ## Adicione o seu sub dominio não pode repetir 
+        
+        numberSequencial3Digites='001'  ## Adcione um numero Sequencial com 3 digitos não pode repetir de 000 a 999
+        
+        mysqlTablePassword="minhasenhadatabelamysql" ## Adicone a senha que deseja utilizar para tabela do mysql
+        
+        mysqlRootPassword="minhasenhaderootmysql"	## Adicone a senha de root para o mysql 
 
 >sudo ./adicionarInstancia.sh
 
@@ -53,11 +72,16 @@ mysqlRootPassword="minhasenhaderootmysql"	## Adicone a senha de root para o mysq
 
 >sudo nano adicionarInstancia.sh      ##altere as variaveis de sua preferencia dominio subdominio etc
 
-domain='meudominio.com' ## Adicione o seu dominio
-subDomain='meusubdominio' ## Adicione o seu sub dominio não pode repetir 
-numberSequencial3Digites='001'  ## Adcione um numero Sequencial com 3 digitos não pode repetir de 000 a 999
-mysqlTablePassword="minhasenhadatabelamysql" ## Adicone a senha que deseja utilizar para tabela do mysql
-mysqlRootPassword="minhasenhaderootmysql"	## Adicone a senha de root para o mysql 
+        domain='meudominio.com' ## Adicione o seu dominio
+        
+        subDomain='meusubdominio' ## Adicione o seu sub dominio não pode repetir 
+        
+        numberSequencial3Digites='001'  ## Adcione um numero Sequencial com 3 digitos não pode repetir de 000 a 999
+        
+        mysqlTablePassword="minhasenhadatabelamysql" ## Adicone a senha que deseja utilizar para tabela do mysql
+        
+        mysqlRootPassword="minhasenhaderootmysql"	## Adicone a senha de root para o mysql 
+
 >sudo ./adicionarInstancia.sh
 
 
