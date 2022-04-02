@@ -66,7 +66,7 @@ Is the information correct? [Y/n] >>>>> digite Y nesta opção
 
 >sudo ./adicionarInstancia.sh
 
-##para adicionar mais uma instancia é só repetir
+**Para adicionar mais uma instancia é só repetir**
 
 >cd /home/deploy/setup
 
