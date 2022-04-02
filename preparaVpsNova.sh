@@ -4,6 +4,8 @@ adduser deploy
 usermod -aG sudo deploy
 sudo -H -u deploy bash -c "mkdir /home/deploy/setup/"
 sudo cp adicionarInstancia_peloNome-v3.sh /home/deploy/setup/adicionarInstancia.sh
+sudo apt-get update
+sudo apt-get upgrade
 sudo -H -u deploy bash -c "sudo apt update && sudo apt -y upgrade"
 sudo -H -u deploy bash -c "curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -"
 sudo -H -u deploy bash -c "sudo apt-get install -y nodejs"
