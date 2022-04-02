@@ -2,6 +2,8 @@
 mysqlRootPassword="minhaSenhaDevoALTERAR123" ##a senha de root do mysql para sua senha definitiva de root
 adduser deploy
 usermod -aG sudo deploy
+sudo -H -u deploy bash -c "mkdir /home/deploy/setup/"
+sudo cp adicionarInstancia_peloNome-v3.sh /home/deploy/setup/adicionarInstancia.sh
 sudo -H -u deploy bash -c "sudo apt update && sudo apt -y upgrade"
 sudo -H -u deploy bash -c "curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -"
 sudo -H -u deploy bash -c "sudo apt-get install -y nodejs"
@@ -13,8 +15,6 @@ mysql -u root -B -N -e "
     ALTER USER 'root'@'localhost' IDENTIFIED BY '${mysqlRootPassword}';
     FLUSH PRIVILEGES;
 "
-cd /home/deploy
-sudo -H -u deploy bash -c "mkdir setup"
 cd /home/deploy/setup
 sudo -H -u deploy bash -c "git clone https://github.com/canove/whaticket whaticket"
 #sudo -H -u deploy bash -c "git clone https://github.com/w3nder/whaticket whaticket" #seu repositorio 
