@@ -1,4 +1,4 @@
-#Criei um instalador rápido que utilizo para subir minhas múltiplas instancias de whaticket e gostaria de compartilhar com a comunidade, facilita muito o processo de subir uma instancia nova
+#Criei um instalador rápido que utilizo para subir minhas múltiplas instancias de whaticket e gostaria de compartilhar com a comunidade, facilita muito o processo de subir uma instancia nova#
 - Cria o banco de dados de forma automática
 - Configura o nginx de forma automática
 - Configura o serviço PM2 de forma automática
